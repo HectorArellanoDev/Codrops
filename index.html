@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Codrops demo</title>
+        <link rel="preload" href="./assets/codropsFont.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    </head>
+    <script type="module" src="Main.js"></script>
+
+    <style>
+        html, body {
+          margin: 0;       /* remove the default margin          */
+          height: 100%;    /* make the html,body fill the page   */
+          overflow: hidden;
+        }
+        canvas {
+          display: block;  /* make the canvas act like a block   */
+          width: 100%;     /* make the canvas fill its container */
+          height: 100%;
+        }
+
+        @font-face {
+          font-family: codrops;
+          src: url("./assets/codropsFont.ttf");
+        }
+
+        .logo {
+          font-family: codrops;
+          position: absolute;
+          top: 30px;
+          left: 50px;
+          font-size: 20px;
+          color: rgba(0, 0, 0, 1);
+        }
+
+        .letter {
+          letter-spacing: -4px;
+          transition: color 0.5s ;
+        }
+
+    </style>
+   
+    <body>
+      <canvas></canvas>
+      <div class="logo">CODROPS
+        <!-- <span class="letter">C</span>
+        <span class="letter">O</span>
+        <span class="letter">D</span>
+        <span class="letter">R</span>
+        <span class="letter">O</span>
+        <span class="letter">P</span>
+        <span class="letter">S</span> -->
+      </div>
+    </body>
+
+</html>
