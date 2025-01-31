@@ -37,13 +37,7 @@ let getDevice = async _ => {
 
 
 let getShader = async path => {
-    try {
-        let response = await fetch(path);
-        let shader = await response.text();
-        return shader;
-    } catch(e) {
-        return path;  
-    }
+    return path;  
 }
 
 let getPipeline = async (path) => {
